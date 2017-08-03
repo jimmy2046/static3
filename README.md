@@ -1,24 +1,31 @@
-# README
+# Hosting CSS with pulldown menu on Heroku
+CSS template: https://templated.co/horizons
+<br/>Github: https://github.com/jimmy2046/static3
+<br/>Heroku: 
+    
+## Getting started
+If you are running Ubuntu Linux with Ruby on Rails installed, 
+to get started, clone this repository and then install the needed gems:
+```
+$ git clone https://github.com/jimmy2046/static3
+```
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Next, run bundle install:
+```
+$ bundle install
+```
 
-Things you may want to cover:
+Migrate the database:
+```
+$ rails db:migrate
+```
 
-* Ruby version
+Start the server:
+```
+$ rails s -b 0.0.0.0 -p 3000
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Navigate the website, in a browser http://localhost:3000/:
+```
+http://localhost:3000/
+```
